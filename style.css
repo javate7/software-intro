@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--ink:#20182c;--muted:#6f6879;--purple:#6d3bb5;--deep:#24113f;--pale:#f5f1fb;--line:#e9e3f0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:Vazirmatn,Tahoma,Arial,sans-serif;line-height:1.9}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+.hero,.subhero{position:relative;overflow:hidden;background:linear-gradient(125deg,#211037,#482276 60%,#7042a8);color:#fff}
+.hero{min-height:480px}
+.nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{font-size:20px;font-weight:800;color:#fff}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#e9def7}
+.navlinks a:hover{color:#fff}
+.hero-content{position:relative;z-index:1;padding:70px 0 90px;max-width:1100px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;color:#e2d1fb;letter-spacing:.1px}
+.eyebrow.purple{color:var(--purple)}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.35;margin:14px 0}
+h1 span{color:#d6baff}
+.hero-content p,.subhero-content p{max-width:650px;color:#e9def7;font-size:17px;margin:0 0 28px}
+.button{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:11px 22px;font-weight:700;font-size:14px;transition:.2s}
+.button:hover{transform:translateY(-2px)}
+.button-light{background:#fff;color:#39205a}
+.button-primary{background:var(--purple);color:#fff}
+.button-outline{border:1px solid #bda5dc;color:var(--purple);background:#fff}
+.hero-orb{position:absolute;border:1px solid #ffffff22;border-radius:50%;pointer-events:none}
+.orb-one{width:400px;height:400px;left:-100px;top:100px}
+.orb-two{width:230px;height:230px;left:140px;top:30px}
+.section{padding-top:76px;padding-bottom:76px}
+.section-heading{text-align:center;max-width:720px;margin:0 auto 34px}
+.section-heading h2,.band h2{font-size:30px;line-height:1.5;margin:8px 0}
+.section-heading p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.app-card{border:1px solid var(--line);border-radius:22px;padding:28px;background:#fff;box-shadow:0 12px 35px #28123f0b}
+.app-icon{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:23px;font-weight:800;margin-bottom:14px}
+.nursing-icon{background:#efe5ff;color:#6032a0}
+.emergency-icon{background:#e3f5f1;color:#16765f}
+.tag{font-size:12px;color:var(--purple);background:#f3edfb;padding:5px 11px;border-radius:30px}
+.app-card h3{font-size:25px;margin:12px 0 4px}
+.app-card p{color:var(--muted);font-size:14px}
+.app-card ul{padding-right:20px;color:#51495b;font-size:14px;margin:15px 0 22px}
+.app-card li{padding:3px 0}
+.text-link{display:block;color:var(--purple);font-weight:700;font-size:14px;margin-top:13px}
+.band{background:var(--pale);padding:48px 0}
+.band-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:center}
+.band h2{margin:5px 0}
+.band p{color:var(--muted);margin:0}
+.compact{padding-top:55px;padding-bottom:65px}
+.footer{background:#1d1329;color:#e8e0ef;padding:22px 0;font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.subhero{min-height:350px}
+.subhero-content{padding:45px 0 65px;position:relative;z-index:1}
+.subhero-content h1{font-size:clamp(32px,4vw,48px)}
+.detail{max-width:900px}
+.detail h2{font-size:24px;margin:0 0 20px}
+.detail>p{color:var(--muted)}
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-bottom:42px}
+.feature{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fff}
+.feature b{color:var(--purple)}
+.feature p{font-size:14px;color:var(--muted);margin:7px 0 0}
+.callout{background:var(--pale);border-radius:18px;padding:25px;margin:28px 0}
+.callout p{color:var(--muted);margin:5px 0 16px}
+.small-note{font-size:12px;color:#81798b}
+.back-link{display:inline-block;color:var(--purple);font-weight:700;margin-top:20px}
+@media(max-width:700px){.nav{align-items:flex-start;gap:12px;flex-direction:column}.navlinks{gap:16px;flex-wrap:wrap}.hero{min-height:430px}.hero-content{padding:45px 0 70px}.cards,.feature-grid,.band-inner{grid-template-columns:1fr}.section{padding-top:52px;padding-bottom:52px}.app-card{padding:22px}.band-inner{gap:10px}.footer-inner{align-items:flex-start;flex-direction:column}}
